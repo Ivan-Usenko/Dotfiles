@@ -70,6 +70,7 @@
         "format-off": "󰂲 off",
         "format-disabled": "󰂲 off",
         "format-connected": "󰂱 on",
+        "format-no-controller": "󰂲 off",
         "tooltip-format": "Bluetooth {status}",
         "tooltip-format-connected": "{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}",
