@@ -10,3 +10,4 @@ vim.o.smartindent = true
 vim.o.undofile = true
 vim.o.swapfile = false
 vim.o.backup = false
+vim.o.wrap = false

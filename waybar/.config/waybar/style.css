@@ -1,0 +1,49 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+@define-color waybarBg alpha(@color3, 0.5);
+
+* {
+    all: unset;
+    outline: none;
+    border: none;
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces,
+.modules-left,
+.modules-right {
+    border-radius: 10px;
+    background-color: @waybarBg;
+    padding: 0.75em;
+}
+
+#workspaces button {
+    color: @color5;
+    margin: 0 0.65em;
+}
+
+.modules-left .module {
+    all: unset;
+    margin: 0 0.5em;
+}
+
+.modules-right .module {
+    all: unset;
+    margin: 0 0.75em;
+}
+
+tooltip {
+    border: 2px solid @foreground;
+    border-radius: 5px;
+    background-color: @background;
+}
+
+tooltip label {
+    padding: 0.25em;
+    color: @foreground;
+}

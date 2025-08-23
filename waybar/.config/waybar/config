@@ -1,0 +1,78 @@
+{
+   "layer": "top",
+   "position": "top",
+   "margin-top": 8,
+   "margin-left": 8,
+   "margin-right": 8,
+   "reload_style_on_change": true,
+   "modules-left": [
+       "clock",
+       "battery",
+       "hyprland/language",
+   ],
+   "modules-center": [
+       "hyprland/workspaces"
+   ],
+   "modules-right": [
+        "bluetooth",
+        "pulseaudio",
+        "network",
+        "custom/power",
+   ],
+   "hyprland/workspaces": {
+       "format": "{icon}",
+       "format-icons": {
+           "active": "",
+           "default": "",
+           "empty": "",
+       },
+       "persistent-workspaces": {
+           "*": 5,
+       }
+    },
+    "clock": {
+       "format": "{:%A %H:%M}",
+    },
+    "battery": {
+        "interval": 2,
+        "format": " {icon} {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "format-charging": " 󰂄 {capacity}%",
+    },
+    "hyprland/language": {
+        "format": " {short}",
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "systemctl poweroff",
+        "tooltip-format": "Turn off computer",
+    },
+    "network": {
+        "interval": 2,
+        "format-wifi": "{icon} {ifname}",
+        "format-icons": ["󰤟", "󰤢", "󰤢", "󰤨"],
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "󰲝 {ifname}",
+        "tooltip-format-ethernet": "{ipaddr}",
+        "format-disconnected": "󰲜",
+        "tooltip-format-disconnected": "Disconnected",
+        "format-disabled": "󰲜",
+        "tooltip-format-disabled": "Disabled",
+        "on-click": "kitty impala"
+    },
+    "pulseaudio": {
+        "format": " {volume}%",
+        "format-muted": " {volume}%",
+        "tooltip-format": "{desc}",
+    },
+    "bluetooth": {
+        "format-on": "󰂯 on",
+        "format-off": "󰂲 off",
+        "format-disabled": "󰂲 off",
+        "format-connected": "󰂱 on",
+        "tooltip-format": "Bluetooth {status}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}",
+        "on-click": "kitty bluetui",
+    },
+}
