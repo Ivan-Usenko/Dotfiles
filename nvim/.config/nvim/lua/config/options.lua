@@ -13,6 +13,4 @@ vim.o.backup = false
 vim.o.wrap = false
 vim.o.winborder = "rounded"
 
-vim.diagnostic.config({
-  virtual_lines = true,
-})
+vim.diagnostic.config({ virtual_lines = false })
