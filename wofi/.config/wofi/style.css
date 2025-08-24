@@ -1,0 +1,52 @@
+@import url('/home/ivan/.cache/wal/colors-waybar.css');
+
+* {
+    all: unset;
+    background-color: transparent;
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-size: 18px;
+    color: @white;
+}
+
+window {
+    background-color: alpha(@color3, 0.5);
+    border-radius: 10px;
+    border: 2px solid @color5;
+}
+
+#outer-box {
+    margin: 1.5em;
+}
+
+#inner-box {
+    margin: 1em 0.5em;
+}
+
+#entry {
+    margin: 0.5em 0;
+    padding: 0.75em 1em;
+    border-radius: 50px;
+}
+
+#entry:selected {
+    background-color: alpha(@color3, 0.3)
+}
+
+#text {
+    margin-left: 1em;
+}
+
+#input {
+    padding: 1em;
+    border-radius: 10px;
+    background-color: alpha(@color3, 0.5);
+    box-shadow: 1px 1px 5px alpha(black, 0.3);
+}
+
+#input placeholder {
+    
+}
+
+#input image {
+    margin-right: 0.5em;
+}
