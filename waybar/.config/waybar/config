@@ -78,6 +78,7 @@
         "on-click": "kitty bluetui",
     },
     "backlight": {
-        "format": " {percent}%"
+        "format": " {percent}%",
+        "tooltip-format": "Brightness {percent}%",
     }
 }
