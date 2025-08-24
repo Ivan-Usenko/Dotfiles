@@ -11,3 +11,8 @@ vim.o.undofile = true
 vim.o.swapfile = false
 vim.o.backup = false
 vim.o.wrap = false
+vim.o.winborder = "rounded"
+
+vim.diagnostic.config({
+  virtual_lines = true,
+})
