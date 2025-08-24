@@ -46,7 +46,7 @@
     "custom/power": {
         "format": "⏻",
         "on-click": "systemctl poweroff",
-        "tooltip-format": "Turn off computer",
+        "tooltip-format": "Power off",
     },
     "network": {
         "interval": 2,
