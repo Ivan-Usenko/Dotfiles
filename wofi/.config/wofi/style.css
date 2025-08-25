@@ -1,17 +1,17 @@
-@import url('/home/ivan/.cache/wal/colors-waybar.css');
+@import url(".config/wofi/mocha.css");
 
 * {
     all: unset;
-    background-color: transparent;
     font-family: JetBrainsMono Nerd Font Propo;
     font-size: 18px;
-    color: @white;
+    color: @text;
 }
 
 window {
-    background-color: alpha(@color3, 0.5);
+    background-color: @crust;
+    border: 2px solid @surface0;
     border-radius: 10px;
-    border: 2px solid @color6;
+    box-shadow: none;
 }
 
 #outer-box {
@@ -29,7 +29,8 @@ window {
 }
 
 #entry:selected {
-    background-color: alpha(@color3, 0.3)
+    background-color: alpha(@mantle, 0.5);
+    box-shadow: 1px 1px 5px alpha(black, 0.3);
 }
 
 #text {
@@ -39,12 +40,8 @@ window {
 #input {
     padding: 1em;
     border-radius: 10px;
-    background-color: alpha(@color3, 0.5);
+    background-color: @mantle;
     box-shadow: 1px 1px 5px alpha(black, 0.3);
-}
-
-#input placeholder {
-    
 }
 
 #input image {

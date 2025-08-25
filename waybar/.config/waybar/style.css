@@ -1,6 +1,4 @@
-@import url("../../.cache/wal/colors-waybar.css");
-
-@define-color waybarBg alpha(@color3, 0.5);
+@import "mocha.css";
 
 * {
     all: unset;
@@ -8,6 +6,7 @@
     border: none;
     font-family: JetBrainsMono Nerd Font Propo;
     font-size: 18px;
+    color: @text;
 }
 
 window#waybar {
@@ -18,12 +17,11 @@ window#waybar {
 .modules-left,
 .modules-right {
     border-radius: 10px;
-    background-color: @waybarBg;
+    background-color: @base;
     padding: 0.75em;
 }
 
 #workspaces button {
-    color: @color6;
     margin: 0 0.65em;
 }
 
@@ -38,12 +36,11 @@ window#waybar {
 }
 
 tooltip {
-    border: 2px solid @foreground;
+    border: 2px solid @text;
     border-radius: 5px;
-    background-color: @background;
+    background-color: @crust;
 }
 
 tooltip label {
     padding: 0.25em;
-    color: @foreground;
 }
