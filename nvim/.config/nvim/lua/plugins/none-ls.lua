@@ -5,7 +5,6 @@ return {
 
         null_ls.reset_sources()
         null_ls.setup({
-            debug = true,
             sources = {
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.diagnostics.pylint.with({
