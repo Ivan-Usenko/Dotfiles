@@ -65,6 +65,7 @@
         "format": " {volume}%",
         "format-muted": " {volume}%",
         "tooltip-format": "{desc}",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
     "bluetooth": {
         "format-on": "󰂯 on",
