@@ -81,5 +81,6 @@
     "backlight": {
         "format": " {percent}%",
         "tooltip-format": "Brightness {percent}%",
+        "min-brightness": 10.0,
     }
 }
